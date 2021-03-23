@@ -10,7 +10,7 @@
 
 “YELP” 
 
-[Yelp][] Honeybees are disappearing at an alarming rate. As a consequence, the production of honey is also on the decline. This project is a simple demonstration of sourcing relatively clean data and using it to build a DataFrame that can be easily queried for the purpose of analysis and used for machine learning predictions.
+[Yelp][] is a hot spot for finding user reviews one of the most popular categories is restaurants. This project will take a look at data sourced from yelp that will help us determine what impacts a restaurant’s reviews and predict the score a new restaurant will receive based on their attributes. 
 
 # Table of contents
 
