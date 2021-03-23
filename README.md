@@ -8,9 +8,9 @@
   </a>
 </p>
 
-“HONEY” 
+“YELP” 
 
-Honeybees are disappearing at an alarming rate. As a consequence, the production of honey is also on the decline. This project is a simple demonstration of sourcing relatively clean data and using it to build a DataFrame that can be easily queried for the purpose of analysis and used for machine learning predictions.
+[Yelp][] Honeybees are disappearing at an alarming rate. As a consequence, the production of honey is also on the decline. This project is a simple demonstration of sourcing relatively clean data and using it to build a DataFrame that can be easily queried for the purpose of analysis and used for machine learning predictions.
 
 # Table of contents
 
@@ -78,5 +78,7 @@ With the functioning model, it is very easy to apply Sklearn’s predict function 
 **Ben Sadler** &lt;hizstor@gmail.com&gt; (he/him)
 
 <!--lint enable prohibited-strings-->
+
+[Yelp]: https://www.yelp.com/
 
 
