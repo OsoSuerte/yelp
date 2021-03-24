@@ -35,7 +35,7 @@ Looking for help? Send an email for direct support &lt;hizstor@gmail.com&gt;
 ## Overview
 Yelp was built with PyCharm 2020.3.3 running Python 3.9.1.
 
-Yelp is designed to clean and shape data related to restaurants and their attributes. This project will look at different characteristics of restaurants and try to determine which have the greatest impact on their reviews. With this information, we will build a model using linear regression.  This model will help us determine what attributes have the most direct impact on a restaurant’s reviews. With this information, we can plug information about a new restaurant into the model and see a prediction of what kind of reviews the restaurant can expect.
+Yelp is designed to clean and shape data related to restaurants and their attributes provided by Yelp.com. This project will look at different characteristics of restaurants and try to determine which have the greatest impact on their reviews. With this information, we will build a model using linear regression. This model will help us determine what attributes have the most direct impact on a restaurant’s reviews. With this information, we can plug information about a new restaurant into the model and see a prediction of what kind of reviews the restaurant can expect.
 
 ## Imports
 Libraries that must be imported to python environment for code to run successfully 
@@ -50,20 +50,19 @@ Libraries that must be imported to python environment for code to run successful
 
 ## Data Analysis
 
-Several lines of code in the begining A few lines of code are included to analyze the data as it is presented from the source material. While not strictly necessary in the final code for it to run successfully it shows the process used to find and organize the requisite information later used for modeling. 
+Towards the beginning of this project, there are multiple lines of code that are commented out. They were used to help me evaluate the accumulated data. They are not needed for the code to run when completed but I left them in place to show the process used in determining how the data should be structured and what elements should be the focus. There is some back and forth at this point. Analyzing the data helps determine what to clean and after it has been cleaned we can reevaluate and determine what data is most relevant to our model
 
 ## Data Cleaning
 
-The provided data is essentially clean. The only change made was in the creation of a variable to hold the data relevant to the current project in an array. This array holds the information related to the amount of honey produced and sorts it by year. The array is then “.reshaped” to fit modeling requirements.    
-The provided data is essentially clean . 
+This data is fairly raw. The first step in formatting it into something more manageable was to merge the different sets of data into one DataFrame and remove features from the data frame that are not helpful in our modeling. Essentially all columns are removed that do not have continuous or binary values. For linear regression to work properly we will remove all missing or “NaN” values and replace them with “0” which works as a value for both binary and continuous values.  We can then do some analysis and determine which features to include in our model. 
 
 ## Modeling
 
-Now that the data is formatted we can use it in combination with linear regression and plotting functions to create a visual representation of our data. This is done in the form of a scatter plot. The plot shows each of our data points (honey production and year of production) plotted accordingly. It also shows a second set of points representing the linear regression found using the provided data. The plot will show a downward trajectory of honey production. There are also a couple of lines included to show the intercept and slope of the line.
+After determining which features will be our focus we can create a training and testing set from our data for modeling. This is best done by defining a function that can be called with different subsets of data. Running the model on the different subsets helps determine which set of data is the best predictor of future outcomes. The highest scoring model is the one that uses all features so that is what we will use in the next step.
 
 ## Predicting
 
-With the functioning model, it is very easy to apply Sklearn’s predict function to the data. This takes the information plugged into the model and projects future honey production for years to come.  According to this prediction, honey will essentially cease entirely in the mid 50’s. If steps are taken to reverse the course of honey production, this model could be used to project future growth instead of decline. The core of this model is the data if you change the data you will change what the model produces. Minor changes can also be made to show other projections for the data. (What state will be first to stop producing honey, what state will be last to stop producing honey, projecting the price of honey in years to come.  etc)   
+We now know what information is needed from a restaurant to predict how many stars it will get from Yelp reviewers. We can plug the values of a new restaurant into our model and get a prediction of how it will do. Preemptively we can plan a new restaurant based on this model that will have a high likelihood of scoring extremely well with reviewers. This serves the purpose of both predicting how a restaurant will be reviewed but guided development to ensure those reviews are positive. 
 
 ## Current project team members
 * [OsoSuerte](https://github.com/OsoSuerte) -
