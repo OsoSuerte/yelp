@@ -33,10 +33,9 @@
 Looking for help? Send an email for direct support &lt;hizstor@gmail.com&gt;
 
 ## Overview
-Honey was built with PyCharm 2020.3.3 running Python 3.9.1.
+Yelp was built with PyCharm 2020.3.3 running Python 3.9.1.
 
-Honey is designed to take a look at a set of data that shows the downward trend of honey production across the united states and predict production for the years to come. The data is already clean and requires little to no manipulation before modeling. The information will be loaded into a Pandas Dataframe grouped by year and then used to train and a model that will predict future honey production. 
-
+Yelp is designed to clean and shape data related to restaurants and their attributes. This project will look at different characteristics of restaurants and try to determine which have the greatest impact on their reviews. With this information, we will build a model using linear regression.  This model will help us determine what attributes have the most direct impact on a restaurant’s reviews. With this information, we can plug information about a new restaurant into the model and see a prediction of what kind of reviews the restaurant can expect.
 
 ## Imports
 Libraries that must be imported to python environment for code to run successfully 
@@ -44,13 +43,14 @@ Libraries that must be imported to python environment for code to run successful
 * **pandas**: Used to build DataFrames.
 * **matplotlib.pyplot**: as plt, used for used to visualize data. 
 * **numpy**: as np, a system for working with arrays.   
-* **LinearRegression**: from sklearn.linear_model, built in functions for ML modeling.   
+* **LinearRegression**: from sklearn.linear_model, built in functions for ML modeling.  
+* **train_test_split**: from sklearn.model_selection, built in functions splitting data for training and testing purposes.  
 
 
 
 ## Data Analysis
 
-A few lines of code are included to analyze the data as it is presented from the source material. While not strictly necessary in the final code for it to run successfully it shows the process used to find and organize the requisite information later used for modeling. 
+Several lines of code in the begining A few lines of code are included to analyze the data as it is presented from the source material. While not strictly necessary in the final code for it to run successfully it shows the process used to find and organize the requisite information later used for modeling. 
 
 ## Data Cleaning
 
