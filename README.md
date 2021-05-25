@@ -3,14 +3,14 @@
   <a href="https://Oso.com/">
     <img
       alt="Oso"
-      src="http://clipart-library.com/images/ki8pMekir.png" width="192" height="120" 
+      src="https://github.com/OsoSuerte/Logizomechanophobia/blob/master/Osos%20profile.png" width="300" height="300" 
     />
   </a>
 </p>
 
-ìYELPî 
+‚ÄúYELP‚Äù 
 
-[Yelp][] is a hot spot for finding user reviews one of the most popular categories is restaurants. This project will take a look at data sourced from yelp that will help us determine what impacts a restaurantís reviews and predict the score a new restaurant will receive based on their attributes. 
+[Yelp][] is a hot spot for finding user reviews one of the most popular categories is restaurants. This project will take a look at data sourced from yelp that will help us determine what impacts a restaurant‚Äôs reviews and predict the score a new restaurant will receive based on their attributes. 
 
 # Table of contents
 
@@ -35,7 +35,7 @@ Looking for help? Send an email for direct support &lt;hizstor@gmail.com&gt;
 ## Overview
 Yelp was built with PyCharm 2020.3.3 running Python 3.9.1.
 
-Yelp is designed to clean and shape data related to restaurants and their attributes provided by Yelp.com. This project will look at different characteristics of restaurants and try to determine which have the greatest impact on their reviews. With this information, we will build a model using linear regression. This model will help us determine what attributes have the most direct impact on a restaurantís reviews. With this information, we can plug information about a new restaurant into the model and see a prediction of what kind of reviews the restaurant can expect.
+Yelp is designed to clean and shape data related to restaurants and their attributes provided by Yelp.com. This project will look at different characteristics of restaurants and try to determine which have the greatest impact on their reviews. With this information, we will build a model using linear regression. This model will help us determine what attributes have the most direct impact on a restaurant‚Äôs reviews. With this information, we can plug information about a new restaurant into the model and see a prediction of what kind of reviews the restaurant can expect.
 
 ## Imports
 Libraries that must be imported to python environment for code to run successfully 
@@ -54,7 +54,7 @@ Towards the beginning of this project, there are multiple lines of code that are
 
 ## Data Cleaning
 
-This data is fairly raw. The first step in formatting it into something more manageable was to merge the different sets of data into one DataFrame and remove features from the data frame that are not helpful in our modeling. Essentially all columns are removed that do not have continuous or binary values. For linear regression to work properly we will remove all missing or ìNaNî values and replace them with ì0î which works as a value for both binary and continuous values.  We can then do some analysis and determine which features to include in our model. 
+This data is fairly raw. The first step in formatting it into something more manageable was to merge the different sets of data into one DataFrame and remove features from the data frame that are not helpful in our modeling. Essentially all columns are removed that do not have continuous or binary values. For linear regression to work properly we will remove all missing or ‚ÄúNaN‚Äù values and replace them with ‚Äú0‚Äù which works as a value for both binary and continuous values.  We can then do some analysis and determine which features to include in our model. 
 
 ## Modeling
 
